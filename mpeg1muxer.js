@@ -21,6 +21,7 @@ Mpeg1Muxer = function(options) {
     }
   }
   this.spawnOptions = [
+    "-thread_queue_size",512,
     "-i",
     this.url,
     '-f',
